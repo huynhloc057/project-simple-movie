@@ -24,20 +24,6 @@ const Header = () => {
         >
           Movies
         </NavLink>
-        <NavLink
-          to="/sign-up"
-          className={({ isActive }) => (isActive ? "text-primary" : "")}
-        >
-          SignUp
-        </NavLink>
-        <NavLink
-          to="/sign-in"
-          className={({ isActive }) => (isActive ? "text-primary" : "")}
-        >
-          SignIn
-        </NavLink>
-
-        <button onClick={handleSignOut}>Sign Out</button>
       </header>
     </div>
   );

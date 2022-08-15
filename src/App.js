@@ -9,8 +9,6 @@ import { AuthProvider } from "./contexts/auth-context";
 // import MovieDetailPage from "./pages/MovieDetailPage";
 // import MoviePage from "./pages/MoviePage";
 import NotFoundPage from "./pages/NotFoundPage";
-import SignInPage from "./pages/SignInPage";
-import SignUpPage from "./pages/SignUpPage";
 
 // Dynamic import
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -33,14 +31,7 @@ function App() {
                   </>
                 }
               ></Route>
-              <Route
-                path="/sign-up"
-                element={<SignUpPage></SignUpPage>}
-              ></Route>
-              <Route
-                path="/sign-in"
-                element={<SignInPage></SignInPage>}
-              ></Route>
+
               <Route path="/movies" element={<MoviePage></MoviePage>}></Route>
               <Route
                 path="/movies/:movieId"
